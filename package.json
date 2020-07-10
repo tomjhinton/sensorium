@@ -4,5 +4,12 @@
   "main": "index.js",
   "repository": "https://github.com/tomjhinton/sensorium",
   "author": "Tom Hinton <tomjhinton@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack-dev-server --mode=development",
+    "run:server": "nodemon",
+    "deploy": "yarn build && gh-pages -d dist",
+    "build": "webpack -p"
+  },
 }
