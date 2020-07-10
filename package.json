@@ -1,0 +1,8 @@
+{
+  "name": "sensorium",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tomjhinton/sensorium",
+  "author": "Tom Hinton <tomjhinton@gmail.com>",
+  "license": "MIT"
+}
