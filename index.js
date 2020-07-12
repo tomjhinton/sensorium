@@ -20,7 +20,7 @@ const app = require('http').createServer(handler),
 board.on("ready", () => {
   const rgb = new five.Led.RGB({
     pins: {
-      red: 6,
+      red: 6,'00FF00'
       green: 5,
       blue: 3
     },
@@ -31,13 +31,13 @@ board.on("ready", () => {
   //board.repl.inject({ anode });
  let index = 0;
   // Turn it on and set the initial color
-  const rainbow = ["FF0000", "FF7F00", "FFFF00", "00FF00", "0000FF", "4B0082", "8F00FF"];
-  board.loop(1000, () => {
-     rgb.color(rainbow[index++]);
-     if (index === rainbow.length) {
-       index = 0;
-     }
-   });
+  // const rainbow = ["FF0000", "FF7F00", "FFFF00", "00FF00", "0000FF", "4B0082", "8F00FF"];
+  // board.loop(1000, () => {
+  //    rgb.color(rainbow[index++]);
+  //    if (index === rainbow.length) {
+  //      index = 0;
+  //    }
+  //  });
 
 
    io.sockets.on('connection', function (socket) {
