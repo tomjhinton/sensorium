@@ -20,7 +20,7 @@ const app = require('http').createServer(handler),
 board.on("ready", () => {
   const rgb = new five.Led.RGB({
     pins: {
-      red: 6,'00FF00'
+      red: 6,
       green: 5,
       blue: 3
     },
@@ -41,11 +41,15 @@ board.on("ready", () => {
 
 
    io.sockets.on('connection', function (socket) {
-      socket.on('click', function () {
+      socket.on('happy', function () {
 
       })
 
-      socket.on('click2', function () {
+      socket.on('sad', function () {
+
+      })
+
+      socket.on('neutral', function () {
 
       })
     })
