@@ -42,15 +42,15 @@ board.on("ready", () => {
 
    io.sockets.on('connection', function (socket) {
       socket.on('happy', function () {
-
+        rgb.color('00FF00')
       })
 
       socket.on('sad', function () {
-
+          rgb.color('FF0000')
       })
 
       socket.on('neutral', function () {
-
+          rgb.color('0000FF')
       })
     })
 
